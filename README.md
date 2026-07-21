@@ -30,15 +30,14 @@ The codec recognizes the TF2 SKU grammar and preserves attributes such as
 
 ## Installation
 
-The repository is ready to publish as the public npm package
-`@cratetf/item-url-codec`. After the first npm release:
+Install the package from npm:
 
 ```bash
 npm install @cratetf/item-url-codec
 ```
 
-Before npm publication, consumers can implement the language-neutral contract
-from [CONTRACT.md](./CONTRACT.md) and verify their implementation against
+Non-JavaScript integrations can implement the language-neutral contract from
+[CONTRACT.md](./CONTRACT.md) and verify their implementation against
 [test-vectors.json](./test-vectors.json).
 
 ## Usage
@@ -125,20 +124,6 @@ npm pack --dry-run
 
 `npm run check` performs strict TypeScript validation, builds declarations and
 source maps, and executes the conformance tests.
-
-## Releasing
-
-1. Update the version in `package.json` and `package-lock.json`.
-2. Update `CHANGELOG.md` and contract vectors when behavior changes.
-3. Run `npm ci`, `npm run check`, and `npm pack --dry-run`.
-4. Review the package contents; only `dist/`, documentation, the license, and
-   `test-vectors.json` should ship.
-5. Commit and push the reviewed change.
-6. Create a signed `v<version>` tag and GitHub release.
-7. Publish to npm with provenance after npm trusted publishing is configured.
-
-Do not publish from an unreviewed working tree. GitHub and npm publication are
-separate release steps.
 
 ## Security
 
