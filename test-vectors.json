@@ -1,0 +1,70 @@
+{
+  "contractVersion": "1.0.0",
+  "canonicalBaseUrl": "https://crate.tf",
+  "canonical": [
+    {
+      "sku": "5021;6",
+      "segment": "5021-6",
+      "path": "/item/5021-6"
+    },
+    {
+      "sku": "5978;6;c151",
+      "segment": "5978-6-c151",
+      "path": "/item/5978-6-c151"
+    },
+    {
+      "sku": "61;6;strange",
+      "segment": "61-6-strange",
+      "path": "/item/61-6-strange"
+    },
+    {
+      "sku": "30911;5;u144",
+      "segment": "30911-5-u144",
+      "path": "/item/30911-5-u144"
+    },
+    {
+      "sku": "199;15;w3;pk120",
+      "segment": "199-15-w3-pk120",
+      "path": "/item/199-15-w3-pk120"
+    },
+    {
+      "sku": "9258;5;uncraftable;td-31154",
+      "segment": "9258-5-uncraftable-td-31154",
+      "path": "/item/9258-5-uncraftable-td-31154"
+    },
+    {
+      "sku": "123;6;kt-2",
+      "segment": "123-6-kt-2",
+      "path": "/item/123-6-kt-2"
+    },
+    {
+      "sku": "123;6;od-456;oq6",
+      "segment": "123-6-od-456-oq6",
+      "path": "/item/123-6-od-456-oq6"
+    }
+  ],
+  "toleratedLegacyPaths": [
+    {
+      "segment": "30911-5-u-144",
+      "apiSku": "30911;5;u144",
+      "canonicalSegment": "30911-5-u144"
+    },
+    {
+      "segment": "199-15-w-3-pk-120",
+      "apiSku": "199;15;w3;pk120",
+      "canonicalSegment": "199-15-w3-pk120"
+    },
+    {
+      "segment": "9258%3B5%3Buncraftable%3Btd-31154",
+      "apiSku": "9258;5;uncraftable;td-31154",
+      "canonicalSegment": "9258-5-uncraftable-td-31154"
+    }
+  ],
+  "invalidPathSegments": [
+    "",
+    "summer-2026-cosmetic-case",
+    "9258-5-uncraftable-td",
+    "5978--6-c151",
+    "not-a-sku"
+  ]
+}

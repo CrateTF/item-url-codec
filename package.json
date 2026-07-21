@@ -1,0 +1,59 @@
+{
+  "name": "@cratetf/item-url-codec",
+  "version": "1.0.0",
+  "description": "Canonical Crate.tf item URL generation and TF2 SKU path parsing.",
+  "license": "MIT",
+  "author": "CrateTF",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./test-vectors.json": "./test-vectors.json"
+  },
+  "files": [
+    "dist/",
+    "test-vectors.json",
+    "README.md",
+    "CONTRACT.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "check": "npm run typecheck && npm test",
+    "prepare": "npm run build",
+    "prepack": "npm run check"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "npm@11.8.0",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrateTF/item-url-codec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CrateTF/item-url-codec/issues"
+  },
+  "homepage": "https://github.com/CrateTF/item-url-codec#readme",
+  "keywords": [
+    "cratetf",
+    "tf2",
+    "sku",
+    "url",
+    "codec"
+  ],
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

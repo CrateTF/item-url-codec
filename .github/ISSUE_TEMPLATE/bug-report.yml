@@ -1,0 +1,46 @@
+name: Bug report
+description: Report an incorrect SKU normalization or item URL conversion.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, private production data, or unrelated user information.
+
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      placeholder: 1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: input
+    attributes:
+      label: Input SKU or path segment
+      placeholder: 9258;5;uncraftable;td-31154
+    validations:
+      required: true
+
+  - type: input
+    id: expected
+    attributes:
+      label: Expected output
+    validations:
+      required: true
+
+  - type: input
+    id: actual
+    attributes:
+      label: Actual output
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include a minimal reproduction when possible.
